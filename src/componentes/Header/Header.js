@@ -3,12 +3,16 @@ import Nav from '../NavBar/Nav'
 import './Header.css'
 
 
+
 const Header = () => {
     return (
       <section className='header'>
           <h1>GREEK INDUMENTARIA</h1>
-          <Nav></Nav>
+          <Nav>
+            
+          </Nav>
           
+
       </section>
     )
   }

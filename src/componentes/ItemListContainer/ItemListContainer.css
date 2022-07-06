@@ -1,0 +1,6 @@
+.Saludo{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+}

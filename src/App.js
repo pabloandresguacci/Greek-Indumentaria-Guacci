@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './componentes/Header/Header'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 
 let styles = {
   
@@ -12,9 +13,8 @@ let styles = {
 
 function App() {
   return <div style={styles}>
-    <Header>
-
-    </Header>
+    <Header/>
+    <ItemListContainer saludos={'¡Bienvenidos a GREEK INDUMENTARIA!'} />
   </div>;
 }
 
