@@ -1,9 +1,7 @@
 import React from 'react'
 import './ItemListContainer.css'
-export const ItemListContainer = ({ saludos }) => {
-  return (
-    <div className='Saludo'>{saludos}</div>
-  )
-}
+export const ItemListContainer = ({ numero }) => {
+  return <h3>{numero}</h3>;
+};
 
 export default ItemListContainer
