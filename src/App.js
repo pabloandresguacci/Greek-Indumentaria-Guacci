@@ -1,8 +1,10 @@
-import {useState, useEffect} from 'react'
+import react from 'react'
 import './App.css';
-import Header from './componentes/Header/Header'
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
-import ItemCounter from './componentes/Itemcounter/Itemcounter'
+import Header from './componentes/Header/Header';
+import remerahombre1 from "./imagenes/Remerahombre1.png";
+import Mallashombre1 from './imagenes/Mallashombre1.png';
+import mallahombre2 from './imagenes/mallashombre2.png';
+import Item from './componentes/Productos/Item';
 let styles = {
   
   height: '200px',
@@ -11,38 +13,39 @@ let styles = {
   padding:'20px'
 };
 
+const items=[
+  {
+    nombre:'Remera',
+    precio:'2500',
+    imagen:remerahombre1,
+    desc:'prenda',
+  },
+
+  {
+    nombre:'Malla1',
+    precio:'2500',
+    imagen:Mallashombre1,
+  },
+  {
+    nombre:'Malla2',
+    precio:'2500',
+    imagen:mallahombre2,
+  }
+]
+
+
 function App() {
-  const [numero, setNumero]= useState(0);
-  useEffect(()=>{
-    console.log('componente sumado');
-  }, []);
-  console.log('componente por sumar');
-  const sumar = () => {
-    console.log('suma');
-    setNumero(numero+1);
-  };
-  const restar = () => {
-    console.log('resta');
-    setNumero(numero-1);
-  };
   return (<div style={styles}>
     <Header/>
-    <section className='sectionBody'>
-    <div className='centrarDiv'>
-    <p>remera</p>
+    <section className='sectionapp'>
     {
-      numero < 5 ? (<ItemCounter numero={numero}/>):(<h5>sin stock</h5>)
-    };
-    
-    <div>
-    <button onClick={sumar}> agregar</button>
-    <button onClick={restar}> eliminar</button>
-    </div>
-    </div>
+      items.map((item, index)=>(
+        <Item id={index}imagen={item.imagen} nombre={item.nombre} precio={item.precio} />
+      ))
+    }
     </section>
-  </div>
-  )
-  ;
+    </div>
+    )
 }
 
 export default App;
