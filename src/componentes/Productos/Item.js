@@ -1,4 +1,7 @@
+import ItemCounter from '../Itemcounter/Itemcounter'
+
 import './Item.css'
+
 const Item = ({imagen, nombre, precio, desc}) => {
     return(
         
@@ -7,6 +10,7 @@ const Item = ({imagen, nombre, precio, desc}) => {
             <img className='medidasimg' src={imagen} alt={desc}></img>
             <p className='color'>{precio}</p>
             <button>detalles</button>
+            <ItemCounter />
         </div>
         
     )
