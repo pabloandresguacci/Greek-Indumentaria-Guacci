@@ -1,0 +1,7 @@
+{"items": [
+    
+    {"id": 1, "prendas": "Remera ", "precio": 1500,  "imag": "../src/imagenes/Remerahombre1.png"},
+    {"id": 2, "prendas": "Malla1", "precio": 3000,  "imag": "../src/imagenes/Mallashombre1.png"},
+    {"id": 3, "prendas": "Malla2", "precio": 2500, "imag": "../src/imagenes/mallashombre2.png"}
+    
+] }
