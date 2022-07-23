@@ -1,0 +1,19 @@
+.bdy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    width: 150px;
+}
+.clase{
+    display: flex;
+    
+    font-size: 30px;
+    
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+
+}

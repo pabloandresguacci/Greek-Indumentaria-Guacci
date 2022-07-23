@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+    padding: 2%;
+    text-align: center;
+    font-size: 50px;
+}

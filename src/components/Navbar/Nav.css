@@ -1,0 +1,24 @@
+.listas{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    flex-direction: row;
+    /* margin-top: 16%; */
+    justify-content: space-around;
+}
+.barra{
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: black;
+}
+.letras{
+    color: white;
+    text-decoration: auto;
+    font-size: 25px;
+}

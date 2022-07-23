@@ -1,27 +1,25 @@
-
-import React from 'react'
-import './App.css';
-import Header from './componentes/Header/Header';
-import ItemCounter from "./componentes/ItemCounter/ItemCounter";
-import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import "./App.css";
+import Header from "./components/Header/Header";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 let styles = {
-  
-  height: '200px',
-  backgroundColor: 'black', 
-  color:'white',
-  padding:'20px'
+  height: "120px",
+  backgroundColor: "#afeeee",
 };
 
-
-
 function App() {
-  return (<div style={styles}>
-    <Header/>
-    
-    <ItemListContainer><ItemCounter /></ItemListContainer>
-    </div>
-    )
+  return (
+    <BrowserRouter>
+    <Header></Header>
+      <Routes style={styles}>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:name" element={<ItemListContainer />} />
+        <Route path="item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

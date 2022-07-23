@@ -1,7 +1,8 @@
-.cartasacom{
+.cardsContainer{
     display: flex;
-    
-    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
+
