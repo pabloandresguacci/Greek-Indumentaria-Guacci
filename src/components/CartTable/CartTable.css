@@ -1,0 +1,18 @@
+.tabla{
+    width: 100%;
+}
+.tabla2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.botones{
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background-color: black;
+    text-transform: uppercase;
+    margin: 10px;
+}

@@ -1,0 +1,25 @@
+.contador{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.botones{
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background-color: black;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.botones1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
